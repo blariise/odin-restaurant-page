@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+
+  color: #FFFFFF;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  background-color: #232536;
+}
+
+nav {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+nav button {
+  background-color: #232536;
+  border: 0;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+}
+
+nav button:hover {
+  background-color: #655ACC;
+}
+
+nav button:active {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+#content {
+  display: grid;
+
+  background-image: url("./pizza.jpeg");
+  background-size: cover;
+}
+
+#content h1 {
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+}
+
