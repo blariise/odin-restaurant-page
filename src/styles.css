@@ -20,8 +20,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
+  grid-template-columns: 1fr minmax(20px, 20%) 1fr;
   background-color: #232536;
 }
 
@@ -29,22 +28,23 @@ nav {
   grid-area: 1 / 2 / 2 / 3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
 }
 
 nav button {
   background-color: #232536;
-  border: 0;
+  border: 4px solid #232536;
   font-size: 1.2rem;
   color: #FFFFFF;
 }
 
 nav button:hover {
   background-color: #655ACC;
+  border: 4px solid #655ACC;
 }
 
 nav button:active {
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 4px solid #FFFFFF;
 }
 
 #content {
