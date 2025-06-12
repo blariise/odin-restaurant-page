@@ -43,7 +43,9 @@ nav button:hover {
   border: 4px solid #655ACC;
 }
 
-nav button:active {
+nav button:active,
+.active,
+.active:hover {
   border-bottom: 4px solid #FFFFFF;
 }
 
@@ -52,11 +54,34 @@ nav button:active {
 
   background-image: url("./pizza.jpeg");
   background-size: cover;
+  justify-content: center;
 }
 
 #content h1 {
   justify-self: center;
   align-self: center;
   font-weight: bold;
+}
+
+.menu-container {
+  margin-top: 10px;
+  display: grid;
+  gap: 20px;
+  height: fit-content;
+  border: 1px solid #FFFFFF;
+  width: 400px;
+  padding: 20px;
+  background-color: #232536C8;
+}
+
+.menu-dish {
+  display: grid;
+  grid-template-columns: fit-content(10px) 1fr fit-content(10px);
+  grid-template-rows: fit-content(1rem) fit-content(0.8rem);
+}
+
+.menu-ingredients {
+  grid-area: 2 / 1 / 3 / 4;
+  font-size: 0.8rem;
 }
 
