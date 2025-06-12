@@ -1,6 +1,7 @@
 import "./styles.css";
 import initHome from "./home.js";
 import initMenu from "./menu.js";
+import initAbout from "./about.js";
 
 initHome();
 
@@ -36,7 +37,7 @@ function setActiveButton(buttonToActive) {
         initMenu();
         break;
       case "About":
-        //initAbout();
+        initAbout();
         break;
     }
   });

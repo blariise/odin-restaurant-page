@@ -85,3 +85,6 @@ nav button:active,
   font-size: 0.8rem;
 }
 
+.about-container {
+  margin-top: 10px;
+}
